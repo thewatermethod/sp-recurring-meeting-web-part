@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "recurring-meeting-callout-client-side-solution",
+    "id": "b9a40873-307d-4b33-a16b-77873e78b396",
+    "version": "1.2.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/recurring-meeting-callout.sppkg"
+  }
+}

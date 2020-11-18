@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "recurring-meeting-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/recurringMeeting/RecurringMeetingWebPart.js",
+          "manifest": "./src/webparts/recurringMeeting/RecurringMeetingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "RecurringMeetingWebPartStrings": "lib/webparts/recurringMeeting/loc/{locale}.js"
+  }
+}

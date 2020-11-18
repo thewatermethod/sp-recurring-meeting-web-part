@@ -1,0 +1,138 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.recurringMeeting {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .disabledRow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background: #c9d6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #e2e2e2,
+      #c9d6ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #e2e2e2,
+      #c9d6ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1em;
+  }
+
+  .teamsRow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    padding: 20px;
+  }
+
+  .zoomRow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background: #fdc830; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f37335,
+      #fdc830
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f37335, #fdc830);
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+    display: block;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .smTitle {
+    @include ms-font-xl;
+    color: black;
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .teamsLogo {
+    background-repeat: no-repeat;
+    background-image: url("./microsoft-teams.svg");
+    background-size: 100% auto;
+    display: block;
+    min-height: 100px;
+    width: 100px;
+
+    @media (min-width: 900px) {
+      float: right;
+    }
+  }
+
+  .zoomLogo {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url("./zoom.svg");
+    display: block;
+    min-height: 100px;
+    width: 200px;
+
+    @media (min-width: 900px) {
+      float: right;
+    }
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system,
+      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
