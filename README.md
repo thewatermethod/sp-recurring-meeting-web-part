@@ -2,9 +2,9 @@
 
 - Displays a link to either a microsoft teams meeting or zoom meeting that goes "live" during a specific time
 
-![Example with active callout](example.PNG)
+![Example with active callout](active.PNG)
 
-![Example with inactive callout](example.PNG)
+![Example with inactive callout](inactive.PNG)
 
 ## Requires
 
